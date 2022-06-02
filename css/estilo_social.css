@@ -1,0 +1,88 @@
+body{
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
+.fondo__top{
+	background: url(../img/ley-15.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 40vh;
+	margin-top: 0px;
+}
+.fondo__top h2{
+	cursor:default;
+	position: relative;
+	text-align:center;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 30px; 
+	top: 10%;
+	bottom: 50%;
+	text-shadow:  5px 5px 5px #000;
+}
+.fondo__top h3{
+	cursor:default;
+	position: relative;
+	text-align:center;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 25px; 
+	top: 13%;
+	bottom: 40%;
+	text-shadow:  5px 5px 5px #000;
+}
+
+.pregunta{
+	background-color: orange;
+	border-radius: 20px;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+.pregunta h2{
+	text-align: center;
+	font-size: 19px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.targetas{
+	display: grid;
+	gap: 1rem;
+	grid-auto-rows: 20rem;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+	margin: 10px;
+}
+
+.targetas figure{
+	margin: auto;
+	position: relative;
+	height: 250px;
+	width:250px;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0px 15px 25px rgba(0,0,0.50);
+}
+
+.targetas figure img{
+	width: 100%;
+	height: 100%;
+	transition: all 500ms ease-out;
+}
+
+.targetas figure .capa{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(180, 184, 189, 0.425);
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	text-shadow:  5px 5px 4px #000;
+}
+.targetas figure .capa h2{
+	margin-top: 70px;
+	margin-bottom: 15px;
+}
